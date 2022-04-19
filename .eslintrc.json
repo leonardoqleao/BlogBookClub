@@ -1,9 +1,15 @@
 {
-    "extends": "standard-with-typescript",
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "standard"
+    ],
     "parserOptions": {
-      "project": "./tsconfig.json"
+        "ecmaVersion": "latest",
+        "sourceType": "module"
     },
     "rules": {
-      "@typescript-eslint/strict-boolean-expressions": "off"
     }
 }
